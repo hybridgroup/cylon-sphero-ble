@@ -22,9 +22,12 @@ Cylon.robot({
         my.display(err, data);
         my.deviceInfo.getManufacturerName(function(err, data){
           my.display(err, data);
-          // my.ollie.wake(function(err, data){
-          //   console.log("wake");
-          // });
+          my.ollie.wake(function(err, data){
+            console.log("wake");
+            my.ollie.getData(function(err, data) {
+              console.log(err, data);
+            })
+          });
         });
       });
     });
