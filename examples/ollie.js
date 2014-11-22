@@ -1,7 +1,7 @@
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: { name: 'bluetooth', adaptor: 'ble', uuid: 'd05efa93b552'},
+  connection: { name: 'bluetooth', adaptor: 'central', uuid: 'cc360e85785e', module: 'cylon-ble'},
   devices: [{name: 'battery', driver: 'ble-battery-service'},
             {name: 'deviceInfo', driver: 'ble-device-information'},
             {name: 'generic', driver: 'ble-generic-access'},
@@ -34,6 +34,15 @@ Cylon.robot({
             after(500, function() {
               console.log("color");
               my.ollie.setRGB(0xFF0000);
+
+              my.ollie.roll(60, 0, 1);
+              after(1000, function(){
+                my.ollie.roll(60, 90, 1);
+
+                after(1000, function(){
+                  my.ollie.stop();
+                });                
+              });
             });
           });
         });
