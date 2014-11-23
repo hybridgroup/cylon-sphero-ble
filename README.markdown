@@ -11,9 +11,7 @@ https://github.com/hybridgroup/cylon
 
 Install the module with: `npm install cylon-ollie`
 
-## Examples
-
-## Connecting
+## Example
 
 ```javascript
 var Cylon = require('cylon');
@@ -44,8 +42,11 @@ Cylon.robot({
   }
 }).start();
 ```
+## Connecting
 
-Explain how to connect from the computer to the device here...
+Explain how to connect from the computer to the Ollie...
+
+## Contributing
 
 * All patches must be provided under the Apache 2.0 License
 * Please use the -s option in git to "sign off" that the commit is your work and you are providing it under the Apache 2.0 License
