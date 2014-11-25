@@ -24,12 +24,12 @@
   },
 
   "peerDependencies": {
-    "cylon": ">=0.19.0 < 1",
+    "cylon": ">=0.20.0 < 1",
     "cylon-ble": ">=0.1.0 < 1"
   },
 
   "dependencies": {
-    "cylon": "~0.19.0",
+    "cylon": "~0.20.0",
     "cylon-ble": ">=0.1.0 < 1",
     "hybridgroup-spheron": "*"
   }
