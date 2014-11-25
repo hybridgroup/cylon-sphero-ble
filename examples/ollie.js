@@ -24,9 +24,6 @@ Cylon.robot({
           my.display(err, data);
           my.ollie.wake(function(err, data){
             console.log("wake");
-            // my.ollie.getData(function(err, data) {
-            //   console.log(err, data);
-            // });
             after(200, function() {
               console.log("color");
               my.ollie.setRGB(0x00FFFF);

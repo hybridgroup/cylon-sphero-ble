@@ -44,7 +44,11 @@ Cylon.robot({
 ```
 ## Connecting
 
-Explain how to connect from the computer to the Ollie...
+Before you will be able to program the Ollie, you will need to put it into "developer mode" using a compatible mobile app. If you do not have an app that can do this, you will not be able to use cylon-ollie.
+
+You then need to determine the `uuid` of your Ollie. One way to do this, is to use the `cylon-ble-scan` command line utility installed as part of [cylon-ble](https://github.com/hybridgroup/cylon-ble).
+
+Once you know your `uuid` substititute it into your code, and away you go!
 
 ## Contributing
 
