@@ -2,7 +2,7 @@
 
 Cylon.js (http://cylonjs.com) is a JavaScript framework for robotics, physical computing, and the Internet of Things using Node.js
 
-This repository contains the Cylon adaptor/drivers to connect to the Ollie from Orbotix.
+This repository contains the Cylon adaptor/drivers to connect to the Ollie from Orbotix (http://www.gosphero.com/ollie/).
 
 For more information about Cylon, check out the repo at
 https://github.com/hybridgroup/cylon
