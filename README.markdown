@@ -66,7 +66,7 @@ Once you know your `uuid` substititute it into your code, and away you go!
 
 ## Release History
 
-None yet...
+0.1.0 - Initial release
 
 ## License
 
