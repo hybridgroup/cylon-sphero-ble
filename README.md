@@ -7,11 +7,11 @@ This repository contains the Cylon adaptor/drivers to connect to the Ollie from 
 For more information about Cylon, check out the repo at
 https://github.com/hybridgroup/cylon
 
-## Getting Started
+## How to Install
 
-Install the module with: `npm install cylon-ollie`
+    $ npm install cylon-ollie
 
-## Example
+## How to Use
 
 ```javascript
 var Cylon = require('cylon');
@@ -49,13 +49,20 @@ Cylon.robot({
   }
 }).start();
 ```
-## Connecting
+
+## How to Connect
 
 Before you will be able to program the Ollie, you will need to put it into "developer mode" using a compatible mobile app. If you do not have an app that can do this, you will not be able to use cylon-ollie.
 
 You then need to determine the `uuid` of your Ollie. One way to do this, is to use the `cylon-ble-scan` command line utility installed as part of [cylon-ble](https://github.com/hybridgroup/cylon-ble).
 
 Once you know your `uuid` substititute it into your code, and away you go!
+
+## Documentation
+
+We're busy adding documentation to [cylonjs.com](http://cylonjs.com). Please check there as we continue to work on Cylon.js.
+
+Thank you!
 
 ## Contributing
 
