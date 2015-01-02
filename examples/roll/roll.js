@@ -1,16 +1,18 @@
-var Cylon = require('cylon');
+"use strict";
+
+var Cylon = require("cylon");
 
 Cylon.robot({
   connections: {
-    bluetooth: { adaptor: 'central', uuid: 'cc360e85785e', module: 'cylon-ble'}
+    bluetooth: { adaptor: "central", uuid: "cc360e85785e", module: "cylon-ble"}
   },
 
   devices: {
-    ollie: { driver: 'ollie'}
+    ollie: { driver: "ollie"}
   },
 
   work: function(my) {
-    my.ollie.wake(function(err, data){
+    my.ollie.wake(function(){
       console.log("wake");
 
       after(200, function() {
