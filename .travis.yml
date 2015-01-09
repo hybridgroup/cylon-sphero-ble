@@ -1,7 +1,9 @@
 language: node_js
 node_js: '0.10'
 install:
+  - sudo apt-get install --force-yes libbluetooth-dev
   - npm install
   - npm install git://github.com/hybridgroup/cylon.git
+  - npm install -g jshint istanbul codeclimate-test-reporter
 script:
   - make ci
