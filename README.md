@@ -9,7 +9,7 @@ https://github.com/hybridgroup/cylon
 
 ## How to Install
 
-    $ npm install cylon-ollie
+    $ npm install cylon cylon-ollie
 
 ## How to Use
 
