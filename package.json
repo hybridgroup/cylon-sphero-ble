@@ -13,7 +13,23 @@
     "url": "https://github.com/hybridgroup/cylon-ollie"
   },
 
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
+
+  "keywords": [
+    "cylon",
+    "cylonjs",
+    "cylons",
+    "robot",
+    "robots",
+    "robotics",
+    "iot",
+    "hardware",
+    "ollie",
+    "sphero",
+    "orbotix",
+    "bluetooth",
+    "ble"
+  ],
 
   "devDependencies": {
     "sinon-chai": "2.5.0",
