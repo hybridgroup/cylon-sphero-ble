@@ -1,6 +1,6 @@
 "use strict";
 
-var Ollie = source("driver");
+var Ollie = lib("driver");
 
 describe("Cylon.Drivers.Ollie", function() {
   var driver = new Ollie({

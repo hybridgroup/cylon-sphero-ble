@@ -12,7 +12,7 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.ollie.wake(function(){
+    my.ollie.wake(function() {
       console.log("wake");
 
       after(200, function() {
@@ -23,10 +23,10 @@ Cylon.robot({
         my.ollie.setRGB(0xFF0000);
         my.ollie.roll(60, 0, 1);
 
-        after(1000, function(){
+        after(1000, function() {
           my.ollie.roll(60, 90, 1);
 
-          after(1000, function(){
+          after(1000, function() {
             my.ollie.stop();
           });
         });

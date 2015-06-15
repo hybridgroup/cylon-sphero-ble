@@ -15,7 +15,7 @@ Cylon.robot({
   },
 
   display: function(err, data) {
-    if (!!err) {
+    if (err) {
       console.log("Error:", err);
       return;
     }
@@ -24,13 +24,13 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.generic.getDeviceName(function(err, data){
+    my.generic.getDeviceName(function(err, data) {
       my.display(err, data);
 
-      my.generic.getAppearance(function(err, data){
+      my.generic.getAppearance(function(err, data) {
         my.display(err, data);
 
-        my.deviceInfo.getManufacturerName(function(err, data){
+        my.deviceInfo.getManufacturerName(function(err, data) {
           my.display(err, data);
 
           my.ollie.wake(function() {
@@ -47,10 +47,10 @@ Cylon.robot({
               my.ollie.setRGB(0xFF0000);
               my.ollie.roll(60, 0, 1);
 
-              after(1000, function(){
+              after(1000, function() {
                 my.ollie.roll(60, 90, 1);
 
-                after(1000, function(){
+                after(1000, function() {
                   my.ollie.stop();
                 });
               });
