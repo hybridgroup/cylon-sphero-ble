@@ -1,7 +1,6 @@
 {
   "name": "cylon-ollie",
   "version": "0.3.0",
-  "main": "lib/cylon-ollie.js",
   "description": "Cylon module for Ollie",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-ollie/issues",

@@ -1,6 +1,6 @@
 "use strict";
 
-var ollie = lib("cylon-ollie");
+var ollie = lib("../");
 
 var Driver = lib("driver");
 
