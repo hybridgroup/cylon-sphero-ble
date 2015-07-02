@@ -1,6 +1,6 @@
 {
   "name": "cylon-ollie",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Cylon module for Ollie",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-ollie/issues",
@@ -39,8 +39,8 @@
   },
 
   "dependencies": {
-    "cylon": "~1.0.0",
-    "cylon-ble": "~0.6.0",
+    "cylon": "~1.1.0",
+    "cylon-ble": "~0.6.1",
     "hybridgroup-spheron": "~0.3.0"
   }
 }
