@@ -31,16 +31,16 @@
   ],
 
   "devDependencies": {
-    "sinon-chai": "2.5.0",
-    "chai":       "1.9.1",
-    "mocha":      "1.18.2",
-    "sinon":      "1.9.1",
+    "sinon-chai": "^2.8.0",
+    "chai":       "^3.2.0",
+    "mocha":      "^2.2.5",
+    "sinon":      "^1.15.4",
     "eslint":     "0.22.1"
   },
 
   "dependencies": {
     "cylon": "~1.1.0",
-    "cylon-ble": "~0.6.1",
+    "cylon-ble": "~0.7.0",
     "hybridgroup-spheron": "~0.3.0"
   }
 }
