@@ -1,5 +1,7 @@
 ## Release History
 
+0.5.0 - Use Cylon.js 1.2.0 & cylon-ble 0.8.0
+
 0.5.0 - Use latest cylon-ble
 
 0.4.1 - Correctly use newer packages
