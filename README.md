@@ -29,25 +29,22 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.ollie.wake(function(err, data){
-      console.log("wake");
+    my.ollie.setRGB(0x00FFFF);
 
-      after(200, function() {
-        my.ollie.setRGB(0x00FFFF);
-      });
+    after(500, function() {
+      my.ollie.setRGB(0xFF0000);
+    });
 
-      after(500, function() {
-        my.ollie.setRGB(0xFF0000);
-        my.ollie.roll(60, 0, 1);
+    after(1000, function() {
+      my.ollie.roll(60, 0, 1);
+    });
 
-        after(1000, function(){
-          my.ollie.roll(60, 90, 1);
+    after(2000, function() {
+      my.ollie.roll(60, 180, 1);
+    });
 
-          after(1000, function(){
-            my.ollie.stop();
-          });
-        });
-      });
+    after(3000, function() {
+      my.ollie.stop();
     });
   }
 }).start();
@@ -55,9 +52,7 @@ Cylon.robot({
 
 ## How to Connect
 
-Before you will be able to program the Ollie, you will need to put it into "developer mode" using a compatible mobile app. If you do not have an app that can do this, you will not be able to use cylon-ollie.
-
-You then need to determine the `uuid` of your Ollie. One way to do this, is to use the `cylon-ble-scan` command line utility installed as part of [cylon-ble](https://github.com/hybridgroup/cylon-ble).
+Before you will be able to program the Ollie, you will need to determine the `uuid` of your Ollie. One way to do this, is to use the `cylon-ble-scan` command line utility installed as part of [cylon-ble](https://github.com/hybridgroup/cylon-ble).
 
 Once you know your `uuid` substititute it into your code, and away you go!
 
