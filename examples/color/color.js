@@ -12,11 +12,8 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.ollie.wake(function() {
-      every((1).second(), function() {
-        my.ollie.setRGB(Math.floor(Math.random() * 100000));
-      });
+    every((1).second(), function() {
+      my.ollie.setRGB(Math.floor(Math.random() * 100000));
     });
   }
 }).start();
-

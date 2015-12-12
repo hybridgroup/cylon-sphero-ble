@@ -1,6 +1,10 @@
 ## Release History
 
-0.5.0 - Use Cylon.js 1.2.0 & cylon-ble 0.8.0
+0.8.0 - Adds "spin" function and updates examples.
+
+0.7.0 - Removes need to put Ollie into "developer mode" or call wake.
+
+0.6.0 - Use Cylon.js 1.2.0 & cylon-ble 0.8.0
 
 0.5.0 - Use latest cylon-ble
 

@@ -12,25 +12,22 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.ollie.wake(function() {
-      console.log("wake");
+    my.ollie.setRGB(0x00FFFF);
 
-      after(200, function() {
-        my.ollie.setRGB(0x00FFFF);
-      });
+    after(500, function() {
+      my.ollie.setRGB(0xFF0000);
+    });
 
-      after(500, function() {
-        my.ollie.setRGB(0xFF0000);
-        my.ollie.roll(60, 0, 1);
+    after(1000, function() {
+      my.ollie.roll(60, 0, 1);
+    });
 
-        after(1000, function() {
-          my.ollie.roll(60, 90, 1);
+    after(2000, function() {
+      my.ollie.roll(60, 180, 1);
+    });
 
-          after(1000, function() {
-            my.ollie.stop();
-          });
-        });
-      });
+    after(3000, function() {
+      my.ollie.stop();
     });
   }
 }).start();
