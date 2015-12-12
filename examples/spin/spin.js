@@ -12,23 +12,18 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.ollie.wake(function() {
-      my.ollie.setRGB(0xFF0000);
-      my.ollie.setRawMotorValues(
-        my.ollie.MotorForward, 200,
-        my.ollie.MotorReverse, 200
-      );
-
-      after(2000, function() {
-        my.ollie.setRawMotorValues(
-          my.ollie.MotorReverse, 200,
-          my.ollie.MotorForward, 200
-        );
-
-        after(2000, function() {
-          my.ollie.stop();
-        });
-      });
+    my.ollie.setRGB(0xFF0000);
+    after((1).second(), function() {
+      my.ollie.spin("left", 200);
+    });
+    after((5).seconds(), function() {
+      my.ollie.spin("right", 200);
+    });
+    after((10).seconds(), function() {
+      my.ollie.stop();
+    });
+    after((12).seconds(), function() {
+      my.ollie.setRGB(0x0000FF);
     });
   }
 }).start();
