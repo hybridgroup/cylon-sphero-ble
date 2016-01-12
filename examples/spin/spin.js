@@ -12,7 +12,7 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.ollie.setRGB(0xFF0000);
+    my.ollie.color(0xFF0000);
     after((1).second(), function() {
       my.ollie.spin("left", 200);
     });
@@ -23,7 +23,7 @@ Cylon.robot({
       my.ollie.stop();
     });
     after((12).seconds(), function() {
-      my.ollie.setRGB(0x0000FF);
+      my.ollie.color(0x0000FF);
     });
   }
 }).start();

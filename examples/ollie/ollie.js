@@ -35,7 +35,7 @@ Cylon.robot({
 
           after(200, function() {
             console.log("color");
-            my.ollie.setRGB(0x00FFFF);
+            my.ollie.color(0x00FFFF);
           });
         });
       });

@@ -13,7 +13,7 @@ Cylon.robot({
 
   work: function(my) {
     every((1).second(), function() {
-      my.ollie.setRGB(Math.floor(Math.random() * 100000));
+      my.ollie.randomColor();
     });
   }
 }).start();

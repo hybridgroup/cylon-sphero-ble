@@ -12,10 +12,10 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.ollie.setRGB(0x00FFFF);
+    my.ollie.color(0x00FFFF);
 
     after(500, function() {
-      my.ollie.setRGB(0xFF0000);
+      my.ollie.color(0xFF0000);
     });
 
     after(1000, function() {
