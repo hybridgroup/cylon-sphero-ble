@@ -12,8 +12,9 @@ Cylon.robot({
   },
 
   work: function(my) {
-    every((1).second(), function() {
-      my.ollie.randomColor();
+    my.ollie.on("collision", function(data) {
+      console.log(data);
     });
+    my.ollie.detectCollisions();
   }
 }).start();

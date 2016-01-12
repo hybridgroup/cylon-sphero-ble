@@ -54,9 +54,15 @@ Cylon.robot({
 
 ## How to Connect
 
-Before you will be able to program the BB-8/Ollie, you will need to determine the `uuid` of your robot. One way to do this, is to use the `cylon-ble-scan` command line utility installed as part of [cylon-ble](https://github.com/hybridgroup/cylon-ble).
+Before you will be able to program the BB-8/Ollie, you will need to determine the BLE `address` of your robot. One way to do this, is to use the `cylon-ble-scan` command line utility installed as part of [cylon-ble](https://github.com/hybridgroup/cylon-ble).
 
-Once you know your `uuid` substitute it into your code, and away you go!
+Once you know your `address` substitute it into your code, and away you go!
+
+You can run the examples in this repo like this:
+
+```
+ADDRESS="f3f26d557108" node examples/color.js
+```
 
 ## Documentation
 

@@ -6,7 +6,7 @@ Cylon
   .robot()
   .connection("bluetooth", {
     adaptor: "central",
-    uuid: "cc360e85785e",
+    uuid: process.env.ADDRESS,
     module: "cylon-ble"
   })
   .device("ollie", { driver: "ollie", module: "cylon-sphero-ble" })
