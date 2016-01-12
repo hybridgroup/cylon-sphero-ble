@@ -1,14 +1,14 @@
 "use strict";
 
-var ollie = lib("../");
+var spheroble = lib("../");
 
 var Driver = lib("driver");
 
-describe("Cylon.Ollie", function() {
+describe("Cylon.SpheroBLE", function() {
   describe("#driver", function() {
     it("returns an instance of the Driver", function() {
       var args = { device: {connection: "test"} };
-      expect(ollie.driver(args)).to.be.instanceOf(Driver);
+      expect(spheroble.driver(args)).to.be.instanceOf(Driver);
     });
   });
 });

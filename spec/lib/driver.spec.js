@@ -1,13 +1,23 @@
 "use strict";
 
-var Ollie = lib("driver");
+var SpheroBLE = lib("driver");
 
-describe("Cylon.Drivers.Ollie", function() {
-  var driver = new Ollie({
-    device: { connection: "connect" }
+describe("Cylon.Drivers.BB8", function() {
+  var driver = new SpheroBLE({
+    device: { connection: "connect", driver: "bb8" }
   });
 
-  it("needs tests", function() {
-    expect(driver).to.be.an.instanceOf(Ollie);
+  it("can create an Ollie", function() {
+    expect(driver).to.be.an.instanceOf(SpheroBLE);
+  });
+});
+
+describe("Cylon.Drivers.Ollie", function() {
+  var driver = new SpheroBLE({
+    device: { connection: "connect", driver: "ollie" }
+  });
+
+  it("can create an Ollie", function() {
+    expect(driver).to.be.an.instanceOf(SpheroBLE);
   });
 });
