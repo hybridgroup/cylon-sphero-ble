@@ -4,6 +4,8 @@ Cylon.js (http://cylonjs.com) is a JavaScript framework for robotics, physical c
 
 This repository contains the Cylon.js drivers to connect to the Sphero BB-8 and Sphero Ollie Bluetooth Low Energy (BLE) robots from Sphero (http://www.sphero.com/).
 
+It was formerly named `cylon-ollie`, but is now renamed `cylon-sphero-ble` to better fit the new expanded functionality.
+
 It uses the Sphero.js node module (https://github.com/orbotix/sphero.js) created by [@orbotix](https://github.com/orbotix) thank you!
 
 Want to use Ruby on robots? Check out our sister project Artoo (http://artoo.io)
