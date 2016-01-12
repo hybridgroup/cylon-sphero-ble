@@ -12,7 +12,7 @@ Want to use Ruby on robots? Check out our sister project Artoo (http://artoo.io)
 
 Want to use the Go programming language to power your robots? Check out our sister project Gobot (http://gobot.io).
 
-[![Build Status](https://secure.travis-ci.org/hybridgroup/cylon-ollie.png?branch=master)](http://travis-ci.org/hybridgroup/cylon-ollie) [![Code Climate](https://codeclimate.com/github/hybridgroup/cylon-ollie/badges/gpa.svg)](https://codeclimate.com/github/hybridgroup/cylon-ollie) [![Test Coverage](https://codeclimate.com/github/hybridgroup/cylon-ollie/badges/coverage.svg)](https://codeclimate.com/github/hybridgroup/cylon-ollie)
+[![Build Status](https://secure.travis-ci.org/hybridgroup/cylon-sphero-ble.png?branch=master)](http://travis-ci.org/hybridgroup/cylon-sphero-ble) [![Code Climate](https://codeclimate.com/github/hybridgroup/cylon-sphero-ble/badges/gpa.svg)](https://codeclimate.com/github/hybridgroup/cylon-sphero-ble) [![Test Coverage](https://codeclimate.com/github/hybridgroup/cylon-sphero-ble/badges/coverage.svg)](https://codeclimate.com/github/hybridgroup/cylon-sphero-ble)
 
 ## How to Install
 
@@ -80,8 +80,8 @@ For our contribution guidelines, please go to [https://github.com/hybridgroup/cy
 
 ## Release History
 
-For the release history, please go to [https://github.com/hybridgroup/cylon-ollie/blob/master/RELEASES.md
-](https://github.com/hybridgroup/cylon-ollie/blob/master/RELEASES.md
+For the release history, please go to [https://github.com/hybridgroup/cylon-sphero-ble/blob/master/RELEASES.md
+](https://github.com/hybridgroup/cylon-sphero-ble/blob/master/RELEASES.md
 ).
 
 ## License
