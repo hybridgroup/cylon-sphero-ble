@@ -1,8 +1,10 @@
-# Cylon.js For Ollie
+# Cylon.js For Sphero BLE Robots
 
 Cylon.js (http://cylonjs.com) is a JavaScript framework for robotics, physical computing, and the Internet of Things (IoT).
 
-This repository contains the Cylon.js adaptor/drivers to connect to the Ollie from Orbotix (http://www.gosphero.com/ollie/).
+This repository contains the Cylon.js drivers to connect to the Sphero BB-8 and Sphero Ollie Bluetooth Low Energy (BLE) robots from Sphero (http://www.sphero.com/).
+
+It uses the Sphero.js node module (https://github.com/orbotix/sphero.js) created by [@orbotix](https://github.com/orbotix) thank you!
 
 Want to use Ruby on robots? Check out our sister project Artoo (http://artoo.io)
 
@@ -12,7 +14,7 @@ Want to use the Go programming language to power your robots? Check out our sist
 
 ## How to Install
 
-    $ npm install cylon cylon-ollie
+    $ npm install cylon cylon-sphero-ble
 
 ## How to Use
 
@@ -25,26 +27,26 @@ Cylon.robot({
   },
 
   devices: {
-    ollie: { driver: 'ollie'}
+    bb8: { driver: 'bb8', module: 'cylon-sphero-ble'}
   },
 
   work: function(my) {
-    my.ollie.color(0x00FFFF);
+    my.bb8.color(0x00FFFF);
 
     after(500, function() {
-      my.ollie.color(0xFF0000);
+      my.bb8.color(0xFF0000);
     });
 
     after(1000, function() {
-      my.ollie.roll(60, 0);
+      my.bb8.roll(60, 0);
     });
 
     after(2000, function() {
-      my.ollie.roll(60, 180);
+      my.bb8.roll(60, 180);
     });
 
     after(3000, function() {
-      my.ollie.stop();
+      my.bb8.stop();
     });
   }
 }).start();
@@ -52,9 +54,9 @@ Cylon.robot({
 
 ## How to Connect
 
-Before you will be able to program the Ollie, you will need to determine the `uuid` of your Ollie. One way to do this, is to use the `cylon-ble-scan` command line utility installed as part of [cylon-ble](https://github.com/hybridgroup/cylon-ble).
+Before you will be able to program the BB-8/Ollie, you will need to determine the `uuid` of your robot. One way to do this, is to use the `cylon-ble-scan` command line utility installed as part of [cylon-ble](https://github.com/hybridgroup/cylon-ble).
 
-Once you know your `uuid` substititute it into your code, and away you go!
+Once you know your `uuid` substitute it into your code, and away you go!
 
 ## Documentation
 

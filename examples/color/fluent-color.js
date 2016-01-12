@@ -9,7 +9,7 @@ Cylon
     uuid: "cc360e85785e",
     module: "cylon-ble"
   })
-  .device("ollie", { driver: "ollie" })
+  .device("ollie", { driver: "ollie", module: "cylon-sphero-ble" })
   .on("ready", function(bot) {
     every((1).second(), function() {
       bot.ollie.randomColor();

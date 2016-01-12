@@ -1,15 +1,15 @@
 {
-  "name": "cylon-ollie",
-  "version": "0.9.0",
-  "description": "Cylon module for Ollie",
+  "name": "cylon-sphero-ble",
+  "version": "0.10.0",
+  "description": "Cylon module for Sphero BB-8/Ollie",
   "homepage": "http://cylonjs.com",
-  "bugs": "https://github.com/hybridgroup/cylon-ollie/issues",
+  "bugs": "https://github.com/hybridgroup/cylon-sphero-ble/issues",
 
   "author": "The Hybrid Group <cylonjs@hybridgroup.com>",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/hybridgroup/cylon-ollie"
+    "url": "https://github.com/hybridgroup/cylon-sphero-ble"
   },
 
   "license": "Apache-2.0",

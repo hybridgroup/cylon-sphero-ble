@@ -11,7 +11,7 @@ Cylon.robot({
     battery: { driver: "ble-battery-service" },
     deviceInfo: { driver: "ble-device-information" },
     generic: { driver: "ble-generic-access" },
-    ollie: { driver: "ollie" }
+    ollie: { driver: "ollie", module: "cylon-sphero-ble" }
   },
 
   display: function(err, data) {

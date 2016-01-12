@@ -8,26 +8,26 @@ Cylon.robot({
   },
 
   devices: {
-    ollie: { driver: "ollie"}
+    bb8: { driver: "bb8", module: "cylon-sphero-ble" }
   },
 
   work: function(my) {
-    my.ollie.color(0x00FFFF);
+    my.bb8.color(0x00FFFF);
 
     after(500, function() {
-      my.ollie.color(0xFF0000);
+      my.bb8.color(0xFF0000);
     });
 
     after(1000, function() {
-      my.ollie.roll(60, 0, 1);
+      my.bb8.roll(60, 0);
     });
 
     after(2000, function() {
-      my.ollie.roll(60, 180, 1);
+      my.bb8.roll(60, 180);
     });
 
     after(3000, function() {
-      my.ollie.stop();
+      my.bb8.stop();
     });
   }
 }).start();

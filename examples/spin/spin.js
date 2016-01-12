@@ -8,7 +8,7 @@ Cylon.robot({
   },
 
   devices: {
-    ollie: { driver: "ollie"}
+    ollie: { driver: "ollie", module: "cylon-sphero-ble" }
   },
 
   work: function(my) {

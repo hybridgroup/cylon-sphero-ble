@@ -1,11 +1,11 @@
 "use strict";
 
-var Ollie = require("./lib/driver");
+var SpheroBLE = require("./lib/driver");
 
 module.exports = {
-  drivers: ["ollie"],
+  drivers: ["ollie", "bb8"],
 
   driver: function(opts) {
-    return new Ollie(opts);
+    return new SpheroBLE(opts);
   }
 };
