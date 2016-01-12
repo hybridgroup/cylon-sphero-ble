@@ -1,5 +1,7 @@
 ## Release History
 
+0.9.0 - Major refactoring uses Sphero.js 0.7.0 & cylon-ble 0.10.0
+
 0.8.0 - Adds "spin" function and updates examples.
 
 0.7.0 - Removes need to put Ollie into "developer mode" or call wake.

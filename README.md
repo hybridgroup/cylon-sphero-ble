@@ -29,18 +29,18 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.ollie.setRGB(0x00FFFF);
+    my.ollie.color(0x00FFFF);
 
     after(500, function() {
-      my.ollie.setRGB(0xFF0000);
+      my.ollie.color(0xFF0000);
     });
 
     after(1000, function() {
-      my.ollie.roll(60, 0, 1);
+      my.ollie.roll(60, 0);
     });
 
     after(2000, function() {
-      my.ollie.roll(60, 180, 1);
+      my.ollie.roll(60, 180);
     });
 
     after(3000, function() {
@@ -76,4 +76,4 @@ For the release history, please go to [https://github.com/hybridgroup/cylon-olli
 
 ## License
 
-Copyright (c) 2014-2015 The Hybrid Group. Licensed under the Apache 2.0 license.
+Copyright (c) 2014-2016 The Hybrid Group. Licensed under the Apache 2.0 license.

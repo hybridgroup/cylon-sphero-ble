@@ -12,7 +12,7 @@ Cylon
   .device("ollie", { driver: "ollie" })
   .on("ready", function(bot) {
     every((1).second(), function() {
-      bot.ollie.setRGB(Math.floor(Math.random() * 100000));
+      bot.ollie.randomColor();
     });
   });
 
