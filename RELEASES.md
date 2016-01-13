@@ -1,5 +1,7 @@
 ## Release History
 
+0.11.0 - Added setRawMotors and stop commands
+
 0.10.0 - Renamed module to cylon-sphero-ble
 
 0.9.0 - Major refactoring uses Sphero.js 0.7.0 & cylon-ble 0.10.0
