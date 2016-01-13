@@ -18,10 +18,10 @@ Cylon.robot({
   work: function(my) {
     my.ollie.color(0xFF0000);
     after((1).second(), function() {
-      my.ollie.spin("left", 200);
+      my.ollie.setRawMotors("forward", 200, "reverse", 200);
     });
     after((5).seconds(), function() {
-      my.ollie.spin("right", 200);
+      my.ollie.setRawMotors("reverse", 200, "forward", 200);
     });
     after((10).seconds(), function() {
       my.ollie.stop();
